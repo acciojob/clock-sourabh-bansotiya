@@ -16,8 +16,8 @@ function dateTime() {
 	let currentTime = hours + ":" + mins + ":" + secs;
 	let currentDateStr = day + "/" + month +"/" + year;
 
-	alert("Time: " + currentTime + "\nDate: " + currentDateStr);
+	alert(currentTime + ", " + currentDateStr);
 
-	document.getElementById("timer").innerHTML = "Time: " + currentTime + "| Date: " + currentDateStr;
+	document.getElementById("timer") + currentTime + currentDateStr;
 }
-setInterval(displayDateTime , 1000);
+setInterval(dateTime , 1000);
